@@ -1,4 +1,4 @@
-# Bind9 Container for running DNS servers in Kubernetes
+# BIND9 Server Container for running DNS servers in Kubernetes
 
 ## Background
 
@@ -105,7 +105,7 @@ spec:
       restartPolicy: Always
       containers:
       - name: dns
-        image: garybowers/bind9:0.6
+        image: garybowers/bind9:latest
         ports:
         - containerPort: 53
           name: dns
